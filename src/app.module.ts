@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module.js';
 import { ConfigModule } from '@nestjs/config';
 import { CategoriesModule } from './categories/categories.module.js';
 import { ProductsModule } from './products/products.module.js';
+import { PosModule } from './pos/pos.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -26,6 +27,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     AuthModule,
     CategoriesModule,
     ProductsModule,
+    PosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
