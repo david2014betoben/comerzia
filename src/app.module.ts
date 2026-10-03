@@ -12,6 +12,7 @@ import { PosModule } from './pos/pos.module.js';
 import { AddressesModule } from './addresses/addresses.module.js';
 import { CartsModule } from './carts/carts.module.js';
 import { OrdersModule } from './orders/orders.module.js';
+import { CashModule } from './cash/cash.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -34,6 +35,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     AddressesModule,
     CartsModule,
     OrdersModule,
+    CashModule,
   ],
   controllers: [AppController],
   providers: [AppService],
