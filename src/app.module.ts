@@ -9,6 +9,9 @@ import { ConfigModule } from '@nestjs/config';
 import { CategoriesModule } from './categories/categories.module.js';
 import { ProductsModule } from './products/products.module.js';
 import { PosModule } from './pos/pos.module.js';
+import { AddressesModule } from './addresses/addresses.module.js';
+import { CartsModule } from './carts/carts.module.js';
+import { OrdersModule } from './orders/orders.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -28,6 +31,9 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     CategoriesModule,
     ProductsModule,
     PosModule,
+    AddressesModule,
+    CartsModule,
+    OrdersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
